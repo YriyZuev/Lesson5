@@ -82,3 +82,15 @@ function getRandomColor() {
     const index = Math.floor(Math.random() * colors.length)
     return colors[index]
 }
+
+function winTheGame(time) {
+    function kill() {
+        const circle = document.querySelector('.circle')
+
+        if (circle) {
+            circle.click()
+        }
+    }
+
+    setInterval(kill, time) 
+}
